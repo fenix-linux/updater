@@ -13,7 +13,7 @@ echo " -------------------------------"
 read opcion
 case $opcion in
 1) echo "FenixPI 0.7 Ya está desponible.";;
-2)	sudo mv parche1.sh /usr/bin; sleep 1;
+2)	sudo mv /home/no10/.notify/git/parche1.sh /usr/bin; sleep 1;
 	sudo chmod 755 /usr/bin/parche1.sh; sleep 1;
 	sudo xterm parche1.sh;
 	echo "Se ha aplicado el parche con éxito";;
