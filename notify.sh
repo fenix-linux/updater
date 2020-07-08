@@ -13,7 +13,10 @@ echo " -------------------------------"
 read opcion
 case $opcion in
 1) echo "FenixPI 0.7 Ya está desponible.";;
-2) su && cat /dev/null > /boot/cmdline.txt && echo console=serial0,115200 console=tty1 root=PARTUUID=ea7d04d6-02 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait logo.nologo > /boot/cmdline.txt && exit;;
+2)	sudo mv parche1.sh /usr/bin; sleep 1;
+	sudo chmod 755 /usr/bin/parche1.sh; sleep 1;
+	sudo xterm parche1.sh;
+	echo "Se ha aplicado el parche con éxito";;
 3) echo "Se ha lanzado FenixPI 0.7";;
 q) echo -e "Gracias por usar el asistente, chao.\n
 Nota: Se irán añadiendo más funciones en cada versión.\n\n2020androrama ";
